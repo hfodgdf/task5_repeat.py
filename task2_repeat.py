@@ -1,10 +1,4 @@
-# Завдання 5: Створення матриці та транспонування
-
 def create_matrix(rows, cols):
-    """
-    Створює матрицю розміром rows x cols.
-    Заповнює числами від 1 до rows*cols.
-    """
     matrix = []
     count = 1
     for _ in range(rows):
@@ -15,13 +9,11 @@ def create_matrix(rows, cols):
         matrix.append(row)
     return matrix
 
+
 def transpose_matrix(matrix):
-    """
-    Транспонує матрицю (міняє рядки на стовпці).
-    """
     return [list(row) for row in zip(*matrix)]
 
-# --- Приклад використання ---
+
 if __name__ == "__main__":
     rows, cols = 3, 4
     mat = create_matrix(rows, cols)
